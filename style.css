@@ -6,6 +6,7 @@
   --max: 960px;
   --pad: 20px;
   --radius: 14px;
+  --pad: 24px;
 }
 
 * { box-sizing: border-box; }
@@ -19,9 +20,14 @@ body {
 }
 
 .container {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--pad);
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+@media (max-width: 600px) {
+  :root {
+    --pad: 18px;
+  }
 }
 
 .header {
