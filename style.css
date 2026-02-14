@@ -26,7 +26,7 @@ body {
 
 @media (max-width: 600px) {
   :root {
-    --pad: 18px;
+    --pad: 40px;
   }
 }
 
