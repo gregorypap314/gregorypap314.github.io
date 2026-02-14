@@ -21,8 +21,9 @@ body {
 
 .container {
   max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--pad);
+  margin: 0 auto;              /* centers the layout */
+  padding-left: var(--pad);
+  padding-right: var(--pad);
 }
 
 @media (max-width: 600px) {
