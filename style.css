@@ -6,7 +6,6 @@
   --max: 960px;
   --pad: 20px;
   --radius: 14px;
-
 }
 
 * { box-sizing: border-box; }
@@ -24,17 +23,11 @@ body {
   padding-right: var(--pad);
 }
 
-@media (max-width: 600px) {
-  :root {
-    --pad: 40px;
-  }
-}
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
+  padding: 24px 10px;
   border-bottom: 1px solid var(--border);
 }
 
