@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Linux temp files
+*~
+*.swp
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Future-proof for web dev
+node_modules/
+dist/
+build/
