@@ -20,8 +20,9 @@ body {
 }
 
 .container {
-  padding-left: var(--pad);
-  padding-right: var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
 }
 
 @media (max-width: 600px) {
