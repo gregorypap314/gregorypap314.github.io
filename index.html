@@ -1,12 +1,82 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Your Name</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gregory Papantoniou</title>
+  <meta name="description" content="Personal website and portfolio." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello — this is my personal website.</h1>
-  <p>If you can read this, GitHub Pages is working.</p>
+  <header class="container header">
+    <a class="brand" href="/">Gregory Papantoniou</a>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I’m Greg!.</h1>
+      <p class="lead">I am a penultimate year Aerospace and Nuclear engineering student at UNSW Sydney. This is my portfolio.</p>
+      <div class="cta">
+        <a class="button" href="#projects">See projects</a>
+        <a class="button ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>1–2 lines on what it is and what you did.</p>
+          <p class="meta">C • Embedded • Hardware</p>
+          <a href="#" aria-label="Project One link">Link →</a>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>1–2 lines on impact, results, or what you learned.</p>
+          <p class="meta">Python • Data • Tools</p>
+          <a href="#" aria-label="Project Two link">Link →</a>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>1–2 lines describing the coolest part.</p>
+          <p class="meta">Aerospace • CAD • Systems</p>
+          <a href="#" aria-label="Project Three link">Link →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        Currently studying a bachelor in Aerospace Engineering (Hons) with a minor in Nuclear Engineering, I have undertaken several projects of varying
+        scales to apply my learnings. Over the past three years I have built satellite payloads, telecommunications ground stations, lunar rovers, high-altitude
+        balloons and more recently a hyperspectral imager for small-satellites. This experience has enabled me to lead student teams of up to one-hundred 
+        engineers, building soft leadership skills to complement my technical experience.
+      </p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><a href="mailto:gpw.papantoniou@gmail.com">gpw.papantoniou@gmail.com</a></li>
+        <li><a href="https://github.com/gregorypap314">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/greg-papantoniou">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Gregory Papantoniou</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
