@@ -11,6 +11,10 @@
 
 * { box-sizing: border-box; }
 
+main {
+  flex: 1;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -37,11 +41,15 @@ body {
 }
 
 .header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--pad) var(--pad);
-  border-bottom: 1px solid var(--border);
+  padding-top: var(--pad);
+  padding-bottom: var(--pad);
 }
 
 .brand {
@@ -100,5 +108,9 @@ body {
 .footer {
   border-top: 1px solid var(--border);
   margin-top: 30px;
-  padding: 22px var(--pad);
+}
+
+.footer .container {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
