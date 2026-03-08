@@ -102,7 +102,15 @@ body {
 .card h3 { margin-top: 0; margin-bottom: 6px; }
 .meta { color: var(--muted); font-size: 0.95rem; }
 
-.contact { list-style: none; padding-left: 0; }
+.contact {
+  list-style: none;
+  padding-left: 0;
+  flex: 1;
+  max-width: var(--max);
+  margin: 0 auto;              /* centers the layout */
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
 .contact li { margin: 8px 0; }
 
 .footer {
