@@ -105,14 +105,11 @@ body {
 .contact {
   list-style: none;
   padding-left: 0;
-  flex: 1;
-  max-width: var(--max);
-  margin: 0 auto;              /* centers the layout */
-  padding-left: var(--pad);
-  padding-right: var(--pad);
 }
-.contact li { margin: 8px 0; }
 
+.contact li {
+  margin: 8px 0;
+}
 .footer {
   border-top: 1px solid var(--border);
   margin-top: 30px;
