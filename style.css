@@ -12,6 +12,9 @@
 * { box-sizing: border-box; }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: var(--bg);
   color: var(--text);
@@ -20,6 +23,7 @@ body {
 }
 
 .container {
+  flex: 1;
   max-width: var(--max);
   margin: 0 auto;              /* centers the layout */
   padding-left: var(--pad);
